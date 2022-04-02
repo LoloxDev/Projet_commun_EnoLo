@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: 0.2s;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 img {
@@ -27,6 +28,7 @@ header {
 ul li {
     color: white;
     list-style: none;
+    line-height: 100px;
 }
 
 ul {
@@ -34,7 +36,29 @@ ul {
     justify-content: space-around;
 }
 
+nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border: solid white 1px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav li:hover {
+    transform: scale(1.2) translateY(10px);
+}
+
 header h1 {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 110px;
+    font-size: 3em;
+    color: white;
+}
+
+header strong {
+    width: 100%;
+    line-height: 100px;
+    padding-top: 15px;
+    border-top: solid white 5px;
 }
