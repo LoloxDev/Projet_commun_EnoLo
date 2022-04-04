@@ -89,25 +89,49 @@ input {
     text-align: center;
     position: relative;
     height: 1999px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". h2 ."
+        ". h3 ."
+        ". . ."
+        "pic1 pic1 pic1"
+        "pic2 pic2 pic2"
+        "pic3 pic3 pic3";
+
+
 }
 
 .pic1 {
-    width: 400px;
+    width: 100%;
     margin-top: 200px;
     border-radius: 30px;
     overflow: hidden;
     border: silver solid 1px;
     box-shadow: -7px 0 10px #555;
+    display: flex;
 }
 
 .pic1:nth-child(3) {
     transform: rotate(5deg);
+    grid-area: pic1;
+    flex-direction: row-reverse;
 }
 
 .pic1:nth-child(4) {
     float: right;
     transform: rotate(-5deg);
     box-shadow: 7px 0 10px #555;
+    grid-area: pic2;
+    flex-direction: row;
+}
+
+.pic1:last-child {
+    clear: both;
+    transform: rotate(0deg);
+    grid-area: pic3;
+    flex-direction: row-reverse;
 }
 
 .section1 h5 , p{
@@ -119,17 +143,26 @@ input {
 
 .picText{
     display:flex;
+    flex-direction: column;
+    width: 65%;
+
+}
+
+.pic1 img{
+    width:35%;
 }
 
 
 
-.pic1:last-child {
-    clear: both;
-    transform: rotate(0deg);
-}
+
 
 .section1 h2 {
     margin-bottom: 50px;
+    grid-area: h2;
+}
+
+.section1 h3 {
+    grid-area: h3;
 }
 
 footer {
