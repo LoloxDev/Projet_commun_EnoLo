@@ -69,7 +69,7 @@ header strong {
 }
 
 .logo{
-    width:180px;
+    width:200px;
     margin: auto;
 }
 
@@ -127,10 +127,12 @@ footer {
     background-color: silver;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .Presentation {
     display: flex;
+    flex-direction: column;
 }
 
 .AssistFollow {
@@ -148,6 +150,12 @@ footer {
     margin-left: 50px;
 }
 
-.Follow h5 {
+#foot h5 {
     width: 100%;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#foot div{
+    padding:20px;
 }
