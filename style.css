@@ -53,20 +53,24 @@ nav li:hover {
 header h1 {
     text-align: center;
     margin-top: 110px;
-    font-size: 3em;
+    font-size: 6em;
     color: white;
     transition: 10s;
 }
 
-header h1:hover {
-    transform: scale(0.01);
-}
+
 
 header strong {
     width: 100%;
     line-height: 100px;
     padding-top: 15px;
     border-top: solid white 5px;
+    display: none;
+}
+
+.logo{
+    width:180px;
+    margin: auto;
 }
 
 #search {
