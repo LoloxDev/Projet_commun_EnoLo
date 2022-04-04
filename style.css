@@ -148,6 +148,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-left: 50px;
+    justify-content: space-evenly;
+}
+
+.Follow a{
+    width:50px;
+    height: 50px;
+    margin-left: 5px;
 }
 
 #foot h5 {
@@ -158,4 +165,14 @@ footer {
 
 #foot div{
     padding:20px;
+}
+
+.Assist a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+
+.Follow a:hover{
+    transform: scale(1.2);
 }
