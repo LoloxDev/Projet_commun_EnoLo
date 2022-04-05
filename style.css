@@ -176,3 +176,7 @@ footer {
 .Follow a:hover{
     transform: scale(1.2);
 }
+
+.Follow h5{
+    text-align: center;
+}
