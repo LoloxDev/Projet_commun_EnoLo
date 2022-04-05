@@ -104,7 +104,9 @@ input {
         "pic2 pic2 pic2"
         "pic3 pic3 pic3";
     
-    background:url:url();
+    background: url(images/photoopacity.jpg) no-repeat;
+    background-size:100%;
+
 }
 
 
@@ -135,22 +137,26 @@ p::first-letter{
     box-shadow: white 11px -1px 20px 5px;
     border-radius: 20px;
     margin: 66px;
-    left: -56px;
+    left: -41px;
     z-index: 0;
 }
 
 .section1 div:nth-child(4) p{
     background-color:antiquewhite;
-    right:8px;
+    right:28px;
     margin:0;
-    top:74px;
+    top:64px;
+    box-shadow:white -11px -1px 35px 5px;
+    border-radius: 20px;
 }
 
 
 .section1 div:nth-child(5) p{
     background-color:antiquewhite;
-    right:399px;
-    top:32px;
+    right:394px;
+    top:47px;
+    box-shadow:white 11px -1px 35px 5px;
+    border-radius:20px;
 }
 
 
