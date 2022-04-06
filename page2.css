@@ -13,7 +13,7 @@ img {
 }
 
 header {
-    background: url("images/image_fond3.jpg") no-repeat;
+    background: url("images/fondpage3.jpg") no-repeat;
     background-size: 100%;
     height: 810px;
     position: relative;
@@ -25,6 +25,8 @@ header {
     font-weight: bold;
     color: white;
 }
+
+
 
 ul li {
     color: white;
@@ -74,17 +76,31 @@ header strong {
 #search {
     text-align: center;
     position: absolute;
-    bottom: 20px;
-    color: white;
+    bottom: 75px;
+    color: black;
     width: 100%;
+    font-size:1.3em;
 }
 
-input {
-    border: 1px dotted #999;
-    border-radius: 10px;
-    height: 25px;
-    -webkit-appearance: none;
+span {
+    color: #8ED1d6;
+    font-size:2.3rem;
+
 }
+
+
+
+input {
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    -webkit-appearance: none;
+    background-color: white;
+    opacity:0.5;
+    box-shadow: antiquewhite 1px 1px 9px 1px;
+}
+
+
 
 /*Plongée*/
 
@@ -113,6 +129,11 @@ input {
     height:300px;
 
 }
+
+.section3act h4{
+    width:400px;
+}
+
 
 /* Randonnée*/
 
@@ -143,11 +164,9 @@ input {
 }
 
 
-
 section{
     margin-top:50px;
     padding:20px;
-
 }
 
 section h4{
@@ -161,18 +180,39 @@ width: 200px;
 margin: 100px auto;
 }
 
+section p{
+    color:white;
+    font-size:1em;
+    border:solid 1px;
+    text-align:center;
+    margin:100px;
 
-section:hover{
-    transform:scale(1.3);
-    height:700px;
-    margin-top:200px;
-    margin-bottom:200px;
 }
 
 
 
+section:hover{
+    transform:scale(1.0.5);
+    height:700px;
+    margin-top:200px;
+    margin-bottom:200px;
+
+}
+
+section:hover h4{
+   float:right;
+   margin:auto; 
+
+}
+
+.selectionflex{
+    display:flex;
+}
 
 
+aside{
+    display:flex;
+}
 
 
 
