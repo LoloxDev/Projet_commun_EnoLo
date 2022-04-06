@@ -126,16 +126,19 @@ input {
 /*Excursion */
 
 .section5act{
-    background:url(images/bancpoisson.jpg) no-repeat;
+    background:url(images/excursion2.jpg) no-repeat;
     background-size:cover;
+    background-position:center;
     height:300px;
+    
 }
 
 /* Détente*/
 
 .section6act{
-    background:url(images/bancpoisson.jpg) no-repeat;
+    background:url(images/detente1.jpg) no-repeat;
     background-size:cover;
+    background-position:center;
     height:300px;
 }
 
