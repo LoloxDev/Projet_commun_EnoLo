@@ -86,50 +86,82 @@ input {
     -webkit-appearance: none;
 }
 
+/*Plongée*/
+
 .section1act{
-    background:url(images/imagetortue.jpg)no-repeat;
+    background:url(images/imagetortue.jpg) no-repeat;
     background-size:cover;
+    background-position: 50% 27%;
     height:300px;
 }
  
+/*Croisière*/
 
 .section2act{
-    background:url(images/bancpoisson.jpg)no-repeat;
-    background-size:cover;
+    background:url(images/croisièrebleu.jpg) no-repeat;
+    background-size:cover; 
     height:300px;
+    background-position:center;
 }
+
+/* Activité Nautique*/
 
 .section3act{
-    background:url(images/bancpoisson.jpg)no-repeat;
+    background:url(images/activiténautique.jpg) no-repeat;
     background-size:cover;
+    background-position:center;
     height:300px;
+
 }
+
+/* Randonnée*/
 
 .section4act{
-    background:url(images/bancpoisson.jpg)no-repeat;
+    background:url(images/randoné.jpg) no-repeat;
     background-size:cover;
+    background-position:50% 30%;
     height:300px;
 }
+
+/*Excursion */
 
 .section5act{
-    background:url(images/bancpoisson.jpg)no-repeat;
+    background:url(images/bancpoisson.jpg) no-repeat;
     background-size:cover;
     height:300px;
 }
 
+/* Détente*/
+
 .section6act{
-    background:url(images/bancpoisson.jpg)no-repeat;
+    background:url(images/bancpoisson.jpg) no-repeat;
     background-size:cover;
     height:300px;
 }
+
+
 
 section{
     margin-top:50px;
+    padding:20px;
 
 }
+
+section h4{
+text-align:center;
+font-size:3em;
+color:white;
+margin-top:100px;
+border-left: solid 3px;
+border-bottom: solid 3px;
+width: 200px;
+margin: 100px auto;
+}
+
+
 section:hover{
     transform:scale(1.3);
-    height:500px;
+    height:700px;
     margin-top:200px;
     margin-bottom:200px;
 }
