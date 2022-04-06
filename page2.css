@@ -85,3 +85,112 @@ input {
     height: 25px;
     -webkit-appearance: none;
 }
+
+.section1act{
+    background:url(images/imagetortue.jpg)no-repeat;
+    background-size:cover;
+    height:300px;
+}
+ 
+
+.section2act{
+    background:url(images/bancpoisson.jpg)no-repeat;
+    background-size:cover;
+    height:300px;
+}
+
+.section3act{
+    background:url(images/bancpoisson.jpg)no-repeat;
+    background-size:cover;
+    height:300px;
+}
+
+.section4act{
+    background:url(images/bancpoisson.jpg)no-repeat;
+    background-size:cover;
+    height:300px;
+}
+
+.section5act{
+    background:url(images/bancpoisson.jpg)no-repeat;
+    background-size:cover;
+    height:300px;
+}
+
+.section6act{
+    background:url(images/bancpoisson.jpg)no-repeat;
+    background-size:cover;
+    height:300px;
+}
+
+section{
+    margin-top:50px;
+
+}
+section:hover{
+    transform:scale(1.3);
+    height:500px;
+    margin-top:200px;
+    margin-bottom:200px;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: silver;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+.AssistFollow {
+    display: flex;
+}
+
+.Assist {
+    display: flex;
+    flex-direction: column;
+}
+
+.Follow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    justify-content: space-evenly;
+}
+
+.Follow a{
+    width:50px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#foot h5 {
+    width: 100%;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#foot div{
+    padding:20px;
+}
+
+.Assist a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+
+.Follow a:hover{
+    transform: scale(1.2);
+}
