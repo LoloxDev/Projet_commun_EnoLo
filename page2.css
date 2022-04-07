@@ -150,6 +150,13 @@ button{
     background: none ;
     border: none;
     color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: unset;
+    background-color: rgb(45,66,87, 0.4) ;
+    line-height: 25px;
+    width:200px;
 }
 
 
@@ -185,12 +192,14 @@ section:hover h4{
     right: 50px;
     top: 50px;
     left: unset;
+    box-shadow: white -10px 10px 10px;
     
 }
 
 aside{
     font-size: 1.2em;
     height: 100%;
+    margin-left: 20px;
 }
 
 .sectionflex{
@@ -214,12 +223,18 @@ aside{
     flex-direction: column;
     height: 100%;
     width: 195px;
+    text-align: center;
 }
 
-.sectionflex li, span{
+.sectionflex button:hover{
+    cursor: pointer;
+    background-color: rgb(255,255,255,0.2);
+}
+
+.sectionflex span{
     border: solid 2px white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 40px;
     line-height: unset;
     background-color: rgb(45,66,87, 0.4) ;
     line-height: 25px;

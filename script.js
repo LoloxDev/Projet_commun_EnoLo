@@ -1,16 +1,20 @@
 function toggle_text1(event) {
     var span1 = document.getElementsByClassName("plongée");
-    for (let i=0; i<span1.length;i++){
+    var videos1 = document.getElementsByClassName("videos");
+    for (i=0; i<span1.length;i++){
         span1[i].style.display ="none";
+    }
 
-    }   
+    for (i=0; i<videos1.length;i++){
+        videos1[i].style.display ="none";
+    }
+
     var button = event.target.id.split('_')[1];
     var span2 = document.getElementById("span_"+button);
     span2.style.display = "inline";
+    var videos2 = document.getElementById("videos_"+button);
+    videos2.style.display = "inline";
 }
-
-
-
 
 
 
