@@ -12,6 +12,7 @@
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
             rel="stylesheet"
         />
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -66,22 +67,40 @@
                 Plongée
             </h4>
             <div class="sectionflex">
-                <p>Bienvenue à Marseille dans cette ville magnifique ou bliblablpdofoijsoijfoijesoifjoiesjfoiesjofjoeisfjoiesjoifjoeisfjoiejio</p>
+                
+                <span id="span_txt1" class="plongée" style="display:none;">Sipadan est une petite île luxuriante au nord-est au large de la partie malaise de Bornéo.
+                    Elle est “très bien protégée”. Un quota strict limite le nombre de plongeurs autorisés par jour.
+                    On ne peut pas y dormir et les militaires veillent à ce que les touristes qui débarquent ne s’aventurent pas au-delà de la limite autorisée.
+                    Ces mesures assurent une préservation exceptionnelle du lieu, aussi bien sur terre que sous l’eau.</span>
+                <video loop autoplay>
+                    <source src="videos/Sipadan Underwater (4K, UHD).mp4" type="video/mp4">
+                </video>
+                <span id="span_txt2" class="plongée" style="display:none;">Dubai</span>
+                <span id="span_txt3" class="plongée" style="display:none;">Marseille</span>
+                <span id="span_txt4" class="plongée" style="display:none;">Corse</span>
                 
                 <aside>
 
                     <ul>
                         <li>
-                            Plongée à Marrakech
+                            <button type="button" id="testbutton_txt1" onclick="toggle_text1(event);">
+                                SIPADAN, MALAISIE
+                            </button>
                         </li>
                         <li>
-                            Plongée à Dubai
+                            <button type="button" id="testbutton_txt2" onclick="toggle_text1(event);">
+                                Plongée à Dubai
+                            </button>
                         </li>
                         <li>
-                            Plongée à Marseille
+                            <button type="button" id="testbutton_txt3" onclick="toggle_text1(event);">
+                                Plongée à Marseille
+                            </button>
                         </li>
                         <li>
-                            Plongée en Corse
+                            <button type="button" id="testbutton_txt4" onclick="toggle_text1(event);">
+                                Plongée en Corse
+                            </button>
                         </li>
                     </ul>
 
