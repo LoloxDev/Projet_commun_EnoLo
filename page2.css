@@ -204,6 +204,8 @@ aside{
 .section1act:hover .sectionflex{
     display: flex;
     height: 100%;
+    width: 100%;
+    top:0;
 }
     
 
@@ -211,6 +213,7 @@ aside{
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 195px;
 }
 
 .sectionflex li, span{
@@ -219,6 +222,7 @@ aside{
     padding: 10px;
     line-height: unset;
     background-color: rgb(45,66,87, 0.4) ;
+    line-height: 25px;
 }
 
 .sectionflex span{
