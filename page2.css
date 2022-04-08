@@ -121,10 +121,24 @@ input {
     background-size: cover;
     background-position: center;
     height: 300px;
+
 }
 
 .section3act h4 {
     width: 390px;
+}
+
+
+.section3act:hover .sectionflex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.section3act:hover h4{
+    color:rgb(7,156,174);
+    box-shadow: rgb(7,156,174) -10px 8px 10px;
 }
 
 /* Randonnée*/
