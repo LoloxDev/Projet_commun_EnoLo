@@ -114,6 +114,13 @@ input {
     background-position: center;
 }
 
+.section2act:hover .sectionflex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
 /* Activité Nautique*/
 
 .section3act {
@@ -158,11 +165,11 @@ button {
     background: none;
     border: none;
     color: white;
-    border: solid 2px white;
+    border: solid 1px white;
     border-radius: 10px;
     padding: 10px;
     line-height: unset;
-    background-color: rgb(45, 66, 87, 0.4);
+    background-color: rgb(45, 66, 87, 0.2);
     line-height: 25px;
     width: 200px;
 }
@@ -243,11 +250,11 @@ aside {
 }
 
 .sectionflex span {
-    border: solid 2px white;
+    border: solid 1px white;
     border-radius: 10px;
     padding: 40px;
     line-height: unset;
-    background-color: rgb(45, 66, 87, 0.4);
+    background-color: rgb(45, 66, 87, 0.2);
     line-height: 25px;
 }
 

@@ -16,8 +16,104 @@ function toggle_text1(event) {
     videos2.style.display = "inline";
 }
 
+/*
+
+function toggle_text2(event2) {
+  var span1 = document.getElementsByClassName("croisière");
+  var videos1 = document.getElementsByClassName("videos2");
+  for (i=0; i<span1.length;i++){
+      span1[i].style.display ="none";
+  }
+
+  for (i=0; i<videos1.length;i++){
+      videos1[i].style.display ="none";
+  }
+
+  var button = event2.target.id.split('_')[1];
+  var span2 = document.getElementById("span2_"+button);
+  span2.style.display = "inline";
+  var videos2 = document.getElementById("videos2_"+button);
+  videos2.style.display = "inline";
+}
 
 
+
+function toggle_text3(event3) {
+  var span1 = document.getElementsByClassName("plongée");
+  var videos1 = document.getElementsByClassName("videos");
+  for (i=0; i<span1.length;i++){
+      span1[i].style.display ="none";
+  }
+
+  for (i=0; i<videos1.length;i++){
+      videos1[i].style.display ="none";
+  }
+
+  var button = event.target.id.split('_')[1];
+  var span2 = document.getElementById("span_"+button);
+  span2.style.display = "inline";
+  var videos2 = document.getElementById("videos_"+button);
+  videos2.style.display = "inline";
+}
+
+function toggle_text4(event4) {
+  var span1 = document.getElementsByClassName("plongée");
+  var videos1 = document.getElementsByClassName("videos");
+  for (i=0; i<span1.length;i++){
+      span1[i].style.display ="none";
+  }
+
+  for (i=0; i<videos1.length;i++){
+      videos1[i].style.display ="none";
+  }
+
+  var button = event.target.id.split('_')[1];
+  var span2 = document.getElementById("span_"+button);
+  span2.style.display = "inline";
+  var videos2 = document.getElementById("videos_"+button);
+  videos2.style.display = "inline";
+}
+
+function toggle_text5(event5) {
+  var span1 = document.getElementsByClassName("plongée");
+  var videos1 = document.getElementsByClassName("videos");
+  for (i=0; i<span1.length;i++){
+      span1[i].style.display ="none";
+  }
+
+  for (i=0; i<videos1.length;i++){
+      videos1[i].style.display ="none";
+  }
+
+  var button = event.target.id.split('_')[1];
+  var span2 = document.getElementById("span_"+button);
+  span2.style.display = "inline";
+  var videos2 = document.getElementById("videos_"+button);
+  videos2.style.display = "inline";
+}
+
+function toggle_text6(event6) {
+  var span1 = document.getElementsByClassName("plongée");
+  var videos1 = document.getElementsByClassName("videos");
+  for (i=0; i<span1.length;i++){
+      span1[i].style.display ="none";
+  }
+
+  for (i=0; i<videos1.length;i++){
+      videos1[i].style.display ="none";
+  }
+
+  var button = event.target.id.split('_')[1];
+  var span2 = document.getElementById("span_"+button);
+  span2.style.display = "inline";
+  var videos2 = document.getElementById("videos_"+button);
+  videos2.style.display = "inline";
+}
+
+*/
+
+
+/* ------------------------------------------------*/
 
 
 
