@@ -161,6 +161,13 @@ input {
     height: 300px;
 }
 
+.section6act:hover .sectionflex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
 button {
     background: none;
     border: none;
