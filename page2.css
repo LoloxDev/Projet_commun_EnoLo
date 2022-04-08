@@ -141,6 +141,9 @@ input {
     box-shadow: rgb(7,156,174) -10px 8px 10px;
 }
 
+
+
+
 /* Randonnée*/
 
 .section4act {
@@ -150,6 +153,21 @@ input {
     height: 300px;
 }
 
+.section4act:hover .sectionflex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
 /*Excursion */
 
 .section5act {
@@ -157,6 +175,13 @@ input {
     background-size: cover;
     background-position: center;
     height: 300px;
+}
+
+.section5act:hover .sectionflex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
 }
 
 /* Détente*/
