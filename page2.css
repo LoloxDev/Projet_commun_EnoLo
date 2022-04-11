@@ -14,7 +14,7 @@ img {
 
 header {
     background: url("images/fondpage3.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 810px;
     position: relative;
 }
