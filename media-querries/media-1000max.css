@@ -1,0 +1,15 @@
+header{
+    height: 570px;
+}
+
+header h1{
+    font-size: 2em;
+}
+
+header a{
+    font-size: 0.7em;
+}
+
+#search{
+    display: none;
+}
