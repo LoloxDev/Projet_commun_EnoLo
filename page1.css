@@ -75,16 +75,27 @@ header strong {
 #search {
     text-align: center;
     position: absolute;
-    bottom: 20px;
+    bottom: 75px;
     color: white;
     width: 100%;
+    font-size:1.3rem
 }
+
+span {
+    color:#EDD5AF;
+    font-size: 3rem;
+    font-family: "Marck Script", "sans-serif";
+}
+
 
 input {
     border: 1px dotted #999;
     border-radius: 10px;
     height: 25px;
     -webkit-appearance: none;
+    background-color: white;
+    opacity:0.5;
+    box-shadow: antiquewhite;
 }
 
 .hostels{
@@ -150,6 +161,7 @@ input {
 .card:last-child{
     grid-area: img6;
 }
+
 
 .greystar{
     display: inline;
