@@ -17,3 +17,7 @@ header a{
 .section1{
     padding: 100px 30px;
 }
+
+footer{
+    flex-direction: column;
+}

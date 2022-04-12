@@ -71,6 +71,7 @@ header strong {
 .logo{
     width:200px;
     margin: auto;
+    padding: 20px 20px 0px 20px;
 }
 
 #search {
@@ -153,7 +154,7 @@ p::first-letter{
 
 .pic1 {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     display: flex;
 }
@@ -202,7 +203,6 @@ footer {
     background-color: silver;
     border: solid 1px;
     display: flex;
-    padding-top:82px;
     justify-content: space-around;
     align-items: center;
 }
