@@ -105,6 +105,9 @@ input {
         "pic2 pic2 pic2"
         "pic3 pic3 pic3";
     grid-gap: 100px;
+    background: url(images/photoopacity.svg) no-repeat;
+    background-size:cover;
+
 }
 
 
