@@ -69,7 +69,7 @@ header strong {
 }
 
 .logo{
-    width:200px;
+    width:300px;
     margin: auto;
     padding: 20px 20px 0px 20px;
 }
@@ -105,9 +105,6 @@ input {
         "pic2 pic2 pic2"
         "pic3 pic3 pic3";
     grid-gap: 100px;
-    background: url(images/photoopacity.jpg) no-repeat;
-    background-size:cover;
-
 }
 
 
@@ -159,6 +156,11 @@ p::first-letter{
     display: flex;
 }
 
+.pic1 strong{
+    margin-bottom: 20px;
+    border-bottom: solid rgb(147,201,197) 2px ;
+}
+
 .pic1:nth-child(3) {
     transform: rotate(3deg);
     grid-area: pic1;
@@ -182,17 +184,13 @@ p::first-letter{
 
 .pic1 img{
     width:30%;
-    box-shadow: #555 -7px 0 10px ;
     object-fit: cover;
-}
-
-.pic1:nth-child(4) img {
-box-shadow: -7px 0 10px #555;
 }
 
 
 .section1 h2 {
     grid-area: h2;
+    position: relative;
 }
 
 .section1 h3 {
@@ -200,17 +198,18 @@ box-shadow: -7px 0 10px #555;
 }
 
 footer {
-    background-color: silver;
-    border: solid 1px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: url(images/footer.jpg) no-repeat;
+    background-size: cover;
 }
 
 
 .Presentation {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .AssistFollow {
@@ -243,6 +242,7 @@ footer {
 
 #foot div{
     padding:20px;
+    text-align: center;
 }
 
 .Assist a{
@@ -258,3 +258,27 @@ footer {
 .Follow h5{
     text-align: center;
 }
+
+
+.section1 h2::after {
+    content: '';
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -75px;
+    background-color: #70cbf4;
+}
+
+.section1 h2::before {
+    content: '';
+    height: 2px;
+    width: 350px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -173px;
+    background-color: #70cbf4;
+}
+
