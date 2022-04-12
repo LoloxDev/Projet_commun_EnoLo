@@ -58,8 +58,6 @@ header h1 {
     transition: 10s;
 }
 
-
-
 header strong {
     width: 100%;
     line-height: 100px;
@@ -68,8 +66,8 @@ header strong {
     display: none;
 }
 
-.logo{
-    width:300px;
+.logo {
+    width: 300px;
     margin: auto;
     padding: 20px 20px 0px 20px;
 }
@@ -89,12 +87,11 @@ input {
     -webkit-appearance: none;
 }
 
-
 /* Section 1 */
-
 
 .section1 {
     padding: 100px 150px;
+    margin: 40px 0;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -106,51 +103,42 @@ input {
         "pic3 pic3 pic3";
     grid-gap: 100px;
     background: url(images/photoopacity.svg) no-repeat;
-    background-size:cover;
-
+    background-size: cover;
 }
-
 
 .section1 p {
-    padding:65px 100px;
-    background:url(images/carte-postal.png) no-repeat;
-    background-size:100%;;
+    padding: 65px 100px;
+    background: url(images/carte-postal.png) no-repeat;
+    background-size: 100%;
     text-align: left;
     box-shadow: white -100px 1px 30px 10px;
- 
 }
 
-
-
-p::first-letter{
-    color:rgb(147,201,197);
+p::first-letter {
+    color: rgb(147, 201, 197);
     font-size: 2em;
     font-family: "Marck Script", "sans-serif";
 }
 
-.section1 div:nth-child(3) p{
+.section1 div:nth-child(3) p {
     background-color: antiquewhite;
     box-shadow: white 11px -1px 20px 5px;
 }
 
-.section1 div:nth-child(4) p{
-    background-color:antiquewhite;
-    right:28px;
-    margin:0;
-    top:64px;
-    box-shadow:white -11px -1px 35px 5px;
-
+.section1 div:nth-child(4) p {
+    background-color: antiquewhite;
+    right: 28px;
+    margin: 0;
+    top: 64px;
+    box-shadow: white -11px -1px 35px 5px;
 }
 
-
-.section1 div:nth-child(5) p{
-    background-color:antiquewhite;
-    right:331px;
-    top:21px;
-    box-shadow:white 11px -1px 35px 5px;
+.section1 div:nth-child(5) p {
+    background-color: antiquewhite;
+    right: 331px;
+    top: 21px;
+    box-shadow: white 11px -1px 35px 5px;
 }
-
-
 
 .pic1 {
     width: 100%;
@@ -159,9 +147,9 @@ p::first-letter{
     display: flex;
 }
 
-.pic1 strong{
+.pic1 strong {
     margin-bottom: 20px;
-    border-bottom: solid rgb(147,201,197) 2px ;
+    border-bottom: solid rgb(147, 201, 197) 2px;
 }
 
 .pic1:nth-child(3) {
@@ -184,12 +172,10 @@ p::first-letter{
     flex-direction: row-reverse;
 }
 
-
-.pic1 img{
-    width:30%;
+.pic1 img {
+    width: 30%;
     object-fit: cover;
 }
-
 
 .section1 h2 {
     grid-area: h2;
@@ -207,7 +193,6 @@ footer {
     background: url(images/footer.jpg) no-repeat;
     background-size: cover;
 }
-
 
 .Presentation {
     display: flex;
@@ -231,8 +216,8 @@ footer {
     justify-content: space-evenly;
 }
 
-.Follow a{
-    width:50px;
+.Follow a {
+    width: 50px;
     height: 50px;
     margin-left: 5px;
 }
@@ -243,28 +228,27 @@ footer {
     margin: 20px 0;
 }
 
-#foot div{
-    padding:20px;
+#foot div {
+    padding: 20px;
     text-align: center;
 }
 
-.Assist a{
+.Assist a {
     color: black;
     text-decoration: none;
     margin-bottom: 7px;
 }
 
-.Follow a:hover{
+.Follow a:hover {
     transform: scale(1.2);
 }
 
-.Follow h5{
+.Follow h5 {
     text-align: center;
 }
 
-
 .section1 h2::after {
-    content: '';
+    content: "";
     height: 2px;
     width: 150px;
     position: absolute;
@@ -275,7 +259,7 @@ footer {
 }
 
 .section1 h2::before {
-    content: '';
+    content: "";
     height: 2px;
     width: 350px;
     position: absolute;
@@ -285,3 +269,22 @@ footer {
     background-color: #70cbf4;
 }
 
+.section1::after {
+    content: "";
+    height: 10px;
+    width: 95%;
+    position: absolute;
+    bottom: -1359px;
+    left: 2.5%;
+    background-color: #b7a371;
+}
+
+.section1::before {
+    content: "";
+    height: 9px;
+    width: 90%;
+    position: absolute;
+    bottom: 137px;
+    left: 5%;
+    background-color: #91b681;
+}
