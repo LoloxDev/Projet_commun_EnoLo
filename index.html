@@ -66,6 +66,25 @@
                 <label for="destination">Destination:</label>
                 <input type="search" name="destination" />
             </div>
+
+            <form method="post" action="traitement.php">
+                <div id="search2">
+                    <label for="marseille" id="gps"
+                        ><i class="fas fa-map-marker-alt"></i
+                    ></label>
+                    <input
+                        id="marseille"
+                        type="text"
+                        name="lieu"
+                        size="28"
+                        placeholder="Marseille, France"
+                    />
+                    <button class="search-btn">
+                        <i class="fa fa-search search-btn-i"></i
+                        ><span>Rechercher</span>
+                    </button>
+                </div>
+            </form>
         </header>
 
         <section class="section1">

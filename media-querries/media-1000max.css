@@ -21,3 +21,8 @@ header a{
 footer{
     flex-direction: column;
 }
+
+form{
+    display: block;
+}
+

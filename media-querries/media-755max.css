@@ -2,3 +2,15 @@
     padding: 26px 34px;
     font-size:0.8em;
 }
+
+.search-btn span{
+    display: none;
+}
+
+.search-btn i{
+    display: block;
+}
+
+.search-btn {
+    width: 45px;
+}
