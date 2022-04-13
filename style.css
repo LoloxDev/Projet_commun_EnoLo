@@ -50,12 +50,17 @@ nav li:hover {
     transform: scale(1.2) translateY(10px);
 }
 
+nav li:hover a{
+    background: rgb(255,255,255,0.5);
+}
+
 header h1 {
     text-align: center;
     margin-top: 110px;
     font-size: 6em;
     color: white;
     transition: 10s;
+    display: none;
 }
 
 header strong {
@@ -70,6 +75,16 @@ header strong {
     width: 300px;
     margin: auto;
     padding: 20px 20px 0px 20px;
+}
+
+header .logo{
+    margin: 150px auto;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -245px;
+    margin-top: -110px;
 }
 
 #search {
@@ -119,26 +134,6 @@ p::first-letter {
     color: rgb(147, 201, 197);
     font-size: 2em;
     font-family: "Marck Script", "sans-serif";
-}
-
-.section1 div:nth-child(3) p {
-    background-color: antiquewhite;
-    box-shadow: white 11px -1px 20px 5px;
-}
-
-.section1 div:nth-child(4) p {
-    background-color: antiquewhite;
-    right: 28px;
-    margin: 0;
-    top: 64px;
-    box-shadow: white -11px -1px 35px 5px;
-}
-
-.section1 div:nth-child(5) p {
-    background-color: antiquewhite;
-    right: 331px;
-    top: 21px;
-    box-shadow: white 11px -1px 35px 5px;
 }
 
 .pic1 {

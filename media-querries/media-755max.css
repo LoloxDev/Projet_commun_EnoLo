@@ -14,3 +14,13 @@
 .search-btn {
     width: 45px;
 }
+
+header .logo{
+    width: 300px;
+    margin-left: -147px;
+    margin-top: -60px;
+}
+
+header{
+    height: 400px;
+}
