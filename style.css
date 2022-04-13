@@ -104,6 +104,7 @@ input {
     grid-gap: 100px;
     background: url(images/photoopacity.svg) no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .section1 p {
@@ -255,7 +256,7 @@ footer {
     bottom: -20px;
     left: 50%;
     margin-left: -75px;
-    background-color: #70cbf4;
+    background-color: #faebd7;
 }
 
 .section1 h2::before {
@@ -266,7 +267,7 @@ footer {
     top: -20px;
     left: 50%;
     margin-left: -173px;
-    background-color: #70cbf4;
+    background-color: #faebd7;
 }
 
 .section1::after {
@@ -274,7 +275,8 @@ footer {
     height: 10px;
     width: 95%;
     position: absolute;
-    bottom: -1359px;
+    bottom: 0;
+    margin-bottom: -25px;
     left: 2.5%;
     background-color: #b7a371;
 }
@@ -284,7 +286,7 @@ footer {
     height: 9px;
     width: 90%;
     position: absolute;
-    bottom: 137px;
+    top: -26px;
     left: 5%;
     background-color: #91b681;
 }
