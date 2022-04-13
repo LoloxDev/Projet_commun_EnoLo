@@ -331,7 +331,6 @@ footer {
     cursor: pointer;
     font-weight: bold;
     font-family: "Raleway";
-    margin-left: -10px;
 }
 
 .search-btn span {
@@ -368,3 +367,53 @@ form{
     transform: scale(1.05);
 }
 
+
+#departuredate {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#nbofadult {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#nbofchild {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.absolute{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    bottom: 40px;
+    left: 15px;
+}
+
+.relative{
+    position: relative;
+}
+
+.adult{
+    font-size: 1.5em;
+    left: 12px !important;
+}
