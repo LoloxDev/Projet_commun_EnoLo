@@ -26,3 +26,23 @@ form{
     display: block;
 }
 
+.sectionflex, li button{
+    font-size: 0.8em;
+}
+
+.sectionflex span{
+    padding: 15px;
+}
+
+section h4{
+    font-size: 1.5em;
+    width: initial !important;
+}
+
+section:hover{
+    height: 600px;
+}
+
+video{
+    display: none !important;
+}
