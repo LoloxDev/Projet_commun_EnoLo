@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: 0.2s;
-    font-family: "Josefin Sans", sans-serif;
+   /* font-family: "Josefin Sans", sans-serif;*/
 }
 
 img {
@@ -17,6 +17,7 @@ header {
     background-size: cover;
     height: 810px;
     position: relative;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 #search p {
@@ -144,7 +145,6 @@ p{
     position:absolute;
     left:15%;
     top:100px;
-    margin-right:150px;
 }
 
 .champ{
