@@ -223,7 +223,7 @@ button {
 }
 
 section {
-    margin-top: 50px;
+    margin-top: 2px;
     transition: 1s;
     position: relative;
     transition: 1s;
@@ -252,8 +252,6 @@ section p {
 
 section:hover {
     height: 800px;
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
 
 section:hover h4 {
