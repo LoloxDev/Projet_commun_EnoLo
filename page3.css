@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     transition: 0.2s;
-    font-family: "Josefin Sans", sans-serif;
 }
 
 img {
@@ -13,10 +12,14 @@ img {
 }
 
 header {
-    background: url("images/fondpage3.jpg") no-repeat;
+    background: url("images/fondpage4.jpg") no-repeat;
     background-size: cover;
     height: 810px;
     position: relative;
+}
+
+header, footer{
+    font-family: "Josefin Sans", sans-serif;
 }
 
 #search p {
@@ -82,8 +85,8 @@ header .logo {
     font-size: 1.3em;
 }
 
-#search span {
-    color: #8ed1d6;
+span {
+    color: rgba(178, 222, 255, 1);
     font-size: 3rem;
     font-family: "Marck Script", "sans-serif";
     text-shadow: white 1px 1px 2px;
@@ -100,21 +103,32 @@ header input {
 }
 
 section{
-    padding:100px;
+    padding:40px;
+    font-family: "Marck Script", "sans-serif";
+    position:relative;
+}
+
+section::before {
+    content: "";
+    height: 10px;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    margin-bottom: 10px;
+    background-color:rgba(178, 222, 255, 1);
 }
 
 section form{
     position: relative;
-    background: url(images/fondform.jpg);
+    background: url(images/fondform.png);
     background-size: cover;
-    border: rgb(172, 222, 231) solid 11px;
-    border-radius: 130px;
+    border-radius: 50px;
     padding:56px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         ". h3 ."
-        ". . ."
         "div1 div1 div1"
         "div2 div2 div2"
         "div3 div3 div3"
@@ -123,7 +137,7 @@ section form{
         "div6 div6 div6";
     grid-gap: 50px;
     text-align: center;
-    font-family: "Marck Script", "sans-serif";
+    
 }
     
 
@@ -131,33 +145,15 @@ section form{
 section h3{
     text-align: center;
     font-size: 2em;
-    border-radius: 40px 1px 44px 1px;
-    border-top: skyblue solid 1px;
     color: white;
     box-shadow: 1px 1px 10px;
     grid-area:h3;
     margin-bottom:75px;
     letter-spacing:1px;
-    text-shadow:skyblue 8px -1px 13px;
+    text-shadow:rgba(178, 222, 255, 1) 10px 1px 13px;
 }
 
 
-
-section p{
-    text-align: center;
-    border-bottom: skyblue solid 1px;
-    border-radius: 1px 44px 1px 44px;
-    box-shadow: 1px 1px 10px;
-    font-size: 1.5em;
-    color: white;
-    margin-top: 64px;
-    padding: 6px;
-    grid-area:p;
-    position:absolute;
-    left:15%;
-    top:100px;
-    margin-right:150px;
-}
 
 .champ{
     display: flex;
@@ -171,12 +167,10 @@ section p{
 section label{
     font-size:1.7em;
     color:white;
-    text-decoration:underline;
     width:190px;
-    text-shadow:black 1px 1px 1px;
+    text-shadow:#074362 1px 1px 1px;
 
 }
-
 
 
 section input{
@@ -187,74 +181,96 @@ section input{
     -webkit-appearance: none;
 }
 
+section input:focus{
+    outline:none;
+}
 
-/* Text Pseudo Avant/Après */
+
+        /* Pseudo */
 
 input#pseudo{
-    background-image: linear-gradient(to bottom, rgba(187, 255, 233, 0.64), rgba(33, 163, 223, 0.527));
+    background-image: linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));
     border: none;
     width: 385px;
-    box-shadow: antiquewhite 1px 3px 20px 1px;
+    box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
 
 input#pseudo:hover{
-    box-shadow: white 1px 1px 1px 1px;
+    box-shadow: white 1px 1px 20px 1px;
 }
 
+        /*Pass*/
 
 input#pass{
-    background-image: linear-gradient(to bottom, rgba(187, 255, 233, 0.64), rgba(33, 163, 223, 0.527));
-    opacity:1.9;
+    background-image: linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));
     border:white;
     width: 385px;
-    box-shadow: antiquewhite 1px 3px 20px 1px;
+    box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
+input#pass:hover{
+    box-shadow: white 1px 1px 20px 1px;
+}
+
+
+        /* mail */
 
 input#mail{
-    background-image: linear-gradient(to bottom, rgba(187, 255, 233, 0.64), rgba(33, 163, 223, 0.527));
-    opacity:1.9;
+    background-image: linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));
     border:none;
     width: 385px;
-    box-shadow: antiquewhite 1px 3px 20px 1px;
+    box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
+input#mail:hover{
+    box-shadow: white 1px 1px 20px 1px;
+}
+
+        /* destination */
 
 input#dest{
-    background-image:linear-gradient(to bottom, rgba(187, 255, 233, 0.64), rgba(33, 163, 223, 0.527));
-    opacity:1.9;
+    background-image:linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));;
     border:none;
     width: 385px;
-    box-shadow: antiquewhite 1px 3px 20px 1px;
+    box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
+input#dest:hover{
+    box-shadow: white 1px 1px 20px 1px;
+}
+
+        /* message */
 
 input#message{
-    background-image: linear-gradient(to bottom, rgba(187, 255, 233, 0.64), rgba(33, 163, 223, 0.527));
-    opacity:1.9;
+    background-image: linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));
     border:none;
     width: 385px;
-    height:119px;
-    box-shadow: antiquewhite 1px 3px 20px 1px;
+    height: 119px;
+    box-shadow:#76b1d6 1px 2px 20px 1px;
 }
 
+input#message:hover{
+    box-shadow: white 1px 1px 20px 1px;
+}
 
-/*Bouton Envoyé*/
+        /*Bouton Envoyé*/
 
 input#envoi{
     box-shadow: white 1px 5px 27px 1px;
     border: none;
+    font-family: "Marck Script", "sans-serif";
+    color:rgba(87, 182, 250, 0.993);
+    text-shadow:  1px 1px
+
 }
  
 
-/* Bouton Envoyé après clic*/
-
 input#envoi:hover{
     color:antiquewhite;
-    background-color: skyblue;
+    background-color: rgb(116, 184, 236);
     transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.6s;
 }
 
 
