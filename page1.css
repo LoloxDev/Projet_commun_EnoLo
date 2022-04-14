@@ -51,13 +51,6 @@ nav li:hover {
     transform: scale(1.2) translateY(10px);
 }
 
-header h1 {
-    text-align: center;
-    margin-top: 110px;
-    font-size: 6em;
-    color: white;
-    transition: 10s;
-}
 
 header strong {
     width: 100%;
@@ -67,8 +60,18 @@ header strong {
     display: none;
 }
 
+header .logo {
+    margin: 150px auto;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -245px;
+    margin-top: -110px;
+}
+
 .logo {
-    width: 200px;
+    width: 300px;
     margin: auto;
 }
 
@@ -81,10 +84,11 @@ header strong {
     font-size:1.3rem
 }
 
-span {
+#search span {
     color:#EDD5AF;
     font-size: 3rem;
     font-family: "Marck Script", "sans-serif";
+    text-shadow: white 1px 1px 2px;
 }
 
 
@@ -103,13 +107,14 @@ input {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr auto;
     grid-template-areas:
-        ". title ."
+        "title title title"
         "img1 img2 img3"
         "img4 img5 img6"
         ". . .";
         grid-gap: 25px;
     text-align: center;
-    padding: 100px;
+    padding: 40px 100px;
+    position: relative;
 }
 
 .card{
@@ -174,7 +179,8 @@ input {
 }
 
 footer {
-    background-color: silver;
+    background: url(images/footer.jpg) no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -225,4 +231,174 @@ footer {
 
 .Follow a:hover{
     transform: scale(1.2);
+}
+
+#gps {
+    color: white;
+    height: 40px;
+    width: 40px;
+    background-color: #EDD5AF;
+    border-radius: 10px 0 0 10px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: -10px;
+    z-index: 5;
+}
+
+#marseille {
+    width: calc(100% - 175px);
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#search2 {
+    display: flex;
+}
+
+.search-btn {
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #EDD5AF;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+.search-btn span {
+    padding: 0 20px;
+}
+
+
+.search-btn i {
+    display: block;
+}
+
+
+.search-btn {
+    width: 130px;
+    border-radius: 10px;
+}
+
+form{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: none;
+}
+
+.search-btn span{
+    display: block;
+}
+
+.search-btn i{
+    display: none;
+}
+
+.search-btn:hover{
+    transform: scale(1.05);
+}
+
+
+#departuredate {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#nbofadult {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#nbofchild {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.absolute{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    bottom: 40px;
+    left: 15px;
+}
+
+.relative{
+    position: relative;
+}
+
+.adult{
+    font-size: 1.5em;
+    left: 12px !important;
+}
+
+section h5::after {
+    content: "";
+    height: 4px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 70px;
+    margin-left: -75px;
+    background-color: #faebd7;
+}
+
+section h5::before {
+    content: "";
+    height: 10px;
+    width: 95%;
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    margin-top: 10px;
+    background-color: #faebd7;
+}
+
+section::before {
+    content: "";
+    height: 10px;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    margin-bottom: 10px;
+    background-color: #b6a371;
+}
+
+nav li:hover a {
+    background: rgb(255,255,255,0.5);
 }

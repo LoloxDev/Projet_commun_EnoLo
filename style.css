@@ -50,12 +50,8 @@ nav li:hover {
     transform: scale(1.2) translateY(10px);
 }
 
-header h1 {
-    text-align: center;
-    margin-top: 110px;
-    font-size: 6em;
-    color: white;
-    transition: 10s;
+nav li:hover a{
+    background: rgb(255,255,255,0.5);
 }
 
 header strong {
@@ -70,6 +66,16 @@ header strong {
     width: 300px;
     margin: auto;
     padding: 20px 20px 0px 20px;
+}
+
+header .logo{
+    margin: 150px auto;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -245px;
+    margin-top: -110px;
 }
 
 #search {
@@ -119,26 +125,6 @@ p::first-letter {
     color: rgb(147, 201, 197);
     font-size: 2em;
     font-family: "Marck Script", "sans-serif";
-}
-
-.section1 div:nth-child(3) p {
-    background-color: antiquewhite;
-    box-shadow: white 11px -1px 20px 5px;
-}
-
-.section1 div:nth-child(4) p {
-    background-color: antiquewhite;
-    right: 28px;
-    margin: 0;
-    top: 64px;
-    box-shadow: white -11px -1px 35px 5px;
-}
-
-.section1 div:nth-child(5) p {
-    background-color: antiquewhite;
-    right: 331px;
-    top: 21px;
-    box-shadow: white 11px -1px 35px 5px;
 }
 
 .pic1 {
@@ -289,4 +275,144 @@ footer {
     top: -26px;
     left: 5%;
     background-color: #91b681;
+}
+
+
+#gps {
+    color: white;
+    height: 40px;
+    width: 40px;
+    background-color: #80a288;
+    border-radius: 10px 0 0 10px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: -10px;
+    z-index: 5;
+}
+
+#marseille {
+    width: calc(100% - 175px);
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#search2 {
+    display: flex;
+}
+
+.search-btn {
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #80a288;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+.search-btn span {
+    padding: 0 20px;
+}
+
+
+.search-btn i {
+    display: block;
+}
+
+
+.search-btn {
+    width: 130px;
+    border-radius: 10px;
+}
+
+form{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: none;
+}
+
+.search-btn span{
+    display: block;
+}
+
+.search-btn i{
+    display: none;
+}
+
+.search-btn:hover{
+    transform: scale(1.05);
+}
+
+
+#departuredate {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#nbofadult {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#nbofchild {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.absolute{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    bottom: 40px;
+    left: 15px;
+}
+
+.relative{
+    position: relative;
+}
+
+.adult{
+    font-size: 1.5em;
+    left: 12px !important;
+}
+
+#search span {
+color: #80a288;
+font-size: 3rem;
+font-family: "Marck Script", "sans-serif";
+text-shadow: white 1px 1px 2px;
 }
