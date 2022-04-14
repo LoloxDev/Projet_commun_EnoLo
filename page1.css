@@ -88,6 +88,7 @@ header .logo {
     color:#EDD5AF;
     font-size: 3rem;
     font-family: "Marck Script", "sans-serif";
+    text-shadow: white 1px 1px 2px;
 }
 
 
@@ -106,13 +107,14 @@ input {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr auto;
     grid-template-areas:
-        ". title ."
+        "title title title"
         "img1 img2 img3"
         "img4 img5 img6"
         ". . .";
         grid-gap: 25px;
     text-align: center;
-    padding: 100px;
+    padding: 40px 100px;
+    position: relative;
 }
 
 .card{
@@ -235,7 +237,7 @@ footer {
     color: white;
     height: 40px;
     width: 40px;
-    background-color: #80a288;
+    background-color: #EDD5AF;
     border-radius: 10px 0 0 10px;
     line-height: 40px;
     text-align: center;
@@ -268,7 +270,7 @@ footer {
     line-height: 40px;
     height: 40px;
     text-align: center;
-    background-color: #80a288;
+    background-color: #EDD5AF;
     color: white;
     font-size: 1.1em;
     border: none;
@@ -361,4 +363,42 @@ form{
 .adult{
     font-size: 1.5em;
     left: 12px !important;
+}
+
+section h5::after {
+    content: "";
+    height: 4px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 70px;
+    margin-left: -75px;
+    background-color: #faebd7;
+}
+
+section h5::before {
+    content: "";
+    height: 10px;
+    width: 95%;
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    margin-top: 10px;
+    background-color: #faebd7;
+}
+
+section::before {
+    content: "";
+    height: 10px;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    margin-bottom: 10px;
+    background-color: #b6a371;
+}
+
+nav li:hover a {
+    background: rgb(255,255,255,0.5);
 }

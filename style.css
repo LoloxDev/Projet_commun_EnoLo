@@ -409,3 +409,10 @@ form{
     font-size: 1.5em;
     left: 12px !important;
 }
+
+#search span {
+color: #80a288;
+font-size: 3rem;
+font-family: "Marck Script", "sans-serif";
+text-shadow: white 1px 1px 2px;
+}

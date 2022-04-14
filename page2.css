@@ -86,6 +86,7 @@ header .logo {
     color: #8ed1d6;
     font-size: 3rem;
     font-family: "Marck Script", "sans-serif";
+    text-shadow: white 1px 1px 2px;
 }
 
 input {
@@ -215,7 +216,6 @@ button {
     color: white;
     border: solid 1px white;
     border-radius: 10px;
-    padding: 10px;
     line-height: unset;
     background-color: rgb(45, 66, 87, 0.2);
     line-height: 25px;
@@ -388,7 +388,7 @@ footer {
     color: white;
     height: 40px;
     width: 40px;
-    background-color: #80a288;
+    background-color: #51b8b5;
     border-radius: 10px 0 0 10px;
     line-height: 40px;
     text-align: center;
@@ -421,7 +421,7 @@ footer {
     line-height: 40px;
     height: 40px;
     text-align: center;
-    background-color: #80a288;
+    background-color: #51b8b5;
     color: white;
     font-size: 1.1em;
     border: none;
@@ -429,6 +429,7 @@ footer {
     cursor: pointer;
     font-weight: bold;
     font-family: "Raleway";
+    width: 130px;
 }
 
 .search-btn span {
@@ -438,12 +439,6 @@ footer {
 
 .search-btn i {
     display: block;
-}
-
-
-.search-btn {
-    width: 130px;
-    border-radius: 10px;
 }
 
 form{
@@ -514,4 +509,8 @@ form{
 .adult{
     font-size: 1.5em;
     left: 12px !important;
+}
+
+nav li:hover a {
+    background: rgb(255,255,255,0.5);
 }
