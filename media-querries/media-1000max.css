@@ -53,5 +53,17 @@ video{
 }
 
 .card figcaption{
-    font-size: 0.65em;
+    font-size: 0.7em;
+}
+
+figcaption h6::first-letter{
+    font-size: 2rem !important;
+}
+
+figcaption div i{
+    font-size: 1em;
+}
+
+.hostels{
+    padding: 40px 30px;
 }

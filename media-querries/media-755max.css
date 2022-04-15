@@ -33,6 +33,6 @@ section h4{
     font-size: 1.1em;
 }
 
-section:hover{
+.height:hover{
     height: 500px;
 }
