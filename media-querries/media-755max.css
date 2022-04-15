@@ -36,3 +36,40 @@ section h4{
 .height:hover{
     height: 500px;
 }
+
+.hostels{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 200px 200px 200px 200px;
+    grid-template-areas: "title title title title title"
+    "img2 img2 img2 img5 img5"
+    "img6 img6 img4 img4 img4"
+    "img1 img1 img1 img1 img1"
+    "img3 img3 img3 img3 img3";
+    grid-gap: 15px;
+}
+
+.separation{
+    display: none;
+}
+
+.card img{
+    height: 75%;
+}
+
+.card figcaption{
+    height: 25%;
+}
+
+figcaption > div{
+    position: absolute;
+    top: -280%;
+}
+
+.greystar{
+    color: white;
+}
+
+.hostels article:first-of-type div,
+.hostels article:nth-of-type(3) div{
+    position: initial;
+}

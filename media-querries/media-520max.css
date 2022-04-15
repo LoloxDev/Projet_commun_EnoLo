@@ -24,3 +24,30 @@
 .pic1{
     transform:unset !important;
 }
+
+.hostels{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title"
+    "img5"
+    "img6"
+    "img2"
+    "img3"
+    "img1"
+    "img4";
+    grid-gap: 15px;
+    padding: 50px 0 ;
+}
+
+.card{
+    border-radius: 0;
+    height: 300px;
+}
+
+figcaption > div{
+    position: initial;
+}
+
+.greystar{
+    color: silver;
+}
