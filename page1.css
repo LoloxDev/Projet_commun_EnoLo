@@ -84,13 +84,28 @@ header .logo {
     font-size:1.3rem
 }
 
-#search span {
+span {
     color:#EDD5AF;
     font-size: 3rem;
     font-family: "Marck Script", "sans-serif";
     text-shadow: white 1px 1px 2px;
 }
 
+.fig h6::first-letter{
+    color: #efe78a;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-family: "Marck Script", "sans-serif";
+    text-shadow: black 1px 1px 2px;
+}
+
+.fig h6{
+    font-size: 1em;
+}
+
+figcaption > div{
+    margin-bottom: 10px;
+}
 
 input {
     border: 1px dotted #999;
@@ -129,13 +144,39 @@ input {
 }
 
 .card img{
-    height: 90%;
+    height: 85%;
 }
 
 .card figcaption{
-    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    padding: 10px;
+    font-size: 0.95em;
+    position: relative;
+    padding: 0 50px;
+    height: 15%;
+}
+
+.card figcaption::after{
+    content: "";
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    bottom:50%;
+    left: 5%;
+    background-color: black;
+}
+
+.card figcaption::before{
+    content: "";
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    background-color: black;
 }
 
 .hostels h5{
@@ -398,6 +439,17 @@ section::before {
     left: 2.5%;
     margin-bottom: 10px;
     background-color: #b6a371;
+}
+
+.separations::after{
+    content: "";
+    height: 90%;
+    width: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    margin-bottom: 10px;
+    background-color: black;
 }
 
 nav li:hover a {

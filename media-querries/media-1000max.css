@@ -39,10 +39,19 @@ section h4{
     width: initial !important;
 }
 
-section:hover{
+.section1act:hover,
+.section2act:hover,
+.section3act:hover,
+.section4act:hover,
+.section5act:hover,
+.section6act:hover{
     height: 600px;
 }
 
 video{
     display: none !important;
+}
+
+.card figcaption{
+    font-size: 0.65em;
 }
