@@ -24,3 +24,15 @@ header .logo{
 header{
     height: 400px;
 }
+
+.sectionflex, li button{
+    font-size: 0.7em;
+}
+
+section h4{
+    font-size: 1.1em;
+}
+
+.height:hover{
+    height: 500px;
+}

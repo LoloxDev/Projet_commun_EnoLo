@@ -84,13 +84,28 @@ header .logo {
     font-size:1.3rem
 }
 
-#search span {
+span {
     color:#EDD5AF;
     font-size: 3rem;
     font-family: "Marck Script", "sans-serif";
     text-shadow: white 1px 1px 2px;
 }
 
+.fig h6::first-letter{
+    color: #efe78a;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-family: "Marck Script", "sans-serif";
+    text-shadow: black 1px 1px 2px;
+}
+
+.fig h6{
+    font-size: 1em;
+}
+
+figcaption > div{
+    margin-bottom: 10px;
+}
 
 input {
     border: 1px dotted #999;
@@ -104,14 +119,14 @@ input {
 
 .hostels{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    grid-template-rows: auto 1fr auto 1fr;
     grid-template-areas:
-        "title title title"
-        "img1 img2 img3"
-        "img4 img5 img6"
-        ". . .";
-        grid-gap: 25px;
+        "title title title title title"
+        "img1 sep1 img2 sep2 img3"
+        "sep3 sep1 sep5 sep2 sep4"
+        "img4 sep1 img5 sep2 img6";
+    grid-gap: 25px;
     text-align: center;
     padding: 40px 100px;
     position: relative;
@@ -125,17 +140,48 @@ input {
     box-shadow: rgb(216,216,216, 0.3) 0 0 100px 10px;
     flex-wrap: wrap;
     align-items: stretch;
+    cursor: pointer;
 
 }
 
 .card img{
-    height: 90%;
+    height: 85%;
 }
 
 .card figcaption{
-    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    padding: 10px;
+    font-size: 0.95em;
+    position: relative;
+    padding: 0 50px;
+    height: 15%;
+}
+
+.card figcaption::after{
+    content: "";
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    bottom:50%;
+    left: 5%;
+    background-color: black;
+}
+
+.card figcaption::before{
+    content: "";
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    background-color: black;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .hostels h5{
@@ -143,27 +189,27 @@ input {
     font-size: 1.5em;
 }
 
-.card:nth-child(6){
+.card:first-of-type{
     grid-area: img1;
 }
 
-.card:nth-child(2){
+.card:nth-of-type(1){
     grid-area: img2;  
 }
 
-.card:nth-child(3){
+.card:nth-of-type(2){
     grid-area: img3;
 }
 
-.card:nth-child(4){
+.card:nth-of-type(3){
     grid-area: img4;
 }
 
-.card:nth-child(5){
+.card:nth-of-type(4){
     grid-area: img5;
 }
 
-.card:last-child{
+.card:last-of-type{
     grid-area: img6;
 }
 
@@ -402,4 +448,34 @@ section::before {
 
 nav li:hover a {
     background: rgb(255,255,255,0.5);
+}
+
+.separation:first-of-type{
+    background-color: black;
+    width: 5px;
+    grid-area: sep1;
+}
+
+.separation:nth-of-type(2){
+    grid-area: sep3;
+    background-color: black;
+    height: 5px;
+    
+}
+.separation:nth-of-type(3){
+grid-area: sep4;
+background-color: black;
+height: 5px;
+}
+
+.separation:nth-of-type(4){
+    grid-area: sep5;
+    background-color: black;
+    height: 5px;
+    }
+
+.separation:last-of-type{
+    background-color: black;
+    grid-area: sep2;
+    width: 5px;
 }
