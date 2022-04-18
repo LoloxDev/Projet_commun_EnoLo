@@ -50,8 +50,8 @@ nav li:hover {
     transform: scale(1.2) translateY(10px);
 }
 
-nav li:hover a{
-    background: rgb(255,255,255,0.5);
+nav li:hover a {
+    background: rgb(255, 255, 255, 0.5);
 }
 
 header strong {
@@ -68,7 +68,7 @@ header strong {
     padding: 20px 20px 0px 20px;
 }
 
-header .logo{
+header .logo {
     margin: 150px auto;
     width: 500px;
     position: absolute;
@@ -167,10 +167,12 @@ p::first-letter {
 .section1 h2 {
     grid-area: h2;
     position: relative;
+    text-shadow: white 1px 1px 3px;
 }
 
 .section1 h3 {
     grid-area: h3;
+    text-shadow: white 1px 1px 3px;
 }
 
 footer {
@@ -179,6 +181,8 @@ footer {
     align-items: center;
     background: url(images/footer.jpg) no-repeat;
     background-size: cover;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .Presentation {
@@ -245,17 +249,6 @@ footer {
     background-color: #faebd7;
 }
 
-.section1 h2::before {
-    content: "";
-    height: 2px;
-    width: 350px;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    margin-left: -173px;
-    background-color: #faebd7;
-}
-
 .section1::after {
     content: "";
     height: 10px;
@@ -276,7 +269,6 @@ footer {
     left: 5%;
     background-color: #91b681;
 }
-
 
 #gps {
     color: white;
@@ -329,36 +321,33 @@ footer {
     padding: 0 20px;
 }
 
-
 .search-btn i {
     display: block;
 }
-
 
 .search-btn {
     width: 130px;
     border-radius: 10px;
 }
 
-form{
+form {
     position: absolute;
     bottom: 10px;
     width: 100%;
     display: none;
 }
 
-.search-btn span{
+.search-btn span {
     display: block;
 }
 
-.search-btn i{
+.search-btn i {
     display: none;
 }
 
-.search-btn:hover{
+.search-btn:hover {
     transform: scale(1.05);
 }
-
 
 #departuredate {
     width: 45px;
@@ -393,7 +382,7 @@ form{
     border-bottom: 1px solid #f2f2f2;
 }
 
-.absolute{
+.absolute {
     position: absolute;
     z-index: 10;
     color: white;
@@ -401,18 +390,22 @@ form{
     left: 15px;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.adult{
+.adult {
     font-size: 1.5em;
     left: 12px !important;
 }
 
 #search span {
-color: #80a288;
-font-size: 3rem;
-font-family: "Marck Script", "sans-serif";
-text-shadow: white 1px 1px 2px;
+    color: #80a288;
+    font-size: 3rem;
+    font-family: "Marck Script", "sans-serif";
+    text-shadow: white 1px 1px 2px;
+}
+
+footer p {
+    width: 100%;
 }

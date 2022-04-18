@@ -232,6 +232,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .Presentation {
@@ -481,4 +483,8 @@ nav li:hover a {
 .card2:hover ~ .card2 > h6 {
     text-shadow: 2px 2px gold;
     color: red;
+}
+
+footer p {
+    width: 100%;
 }

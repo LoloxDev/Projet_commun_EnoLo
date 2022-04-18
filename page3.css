@@ -19,8 +19,10 @@ header {
 }
 
 header,
-footer {
-    font-family: "Josefin Sans", sans-serif;
+footer,
+#search2 input,
+#search2 button {
+    font-family: "Josefin Sans", sans-serif !important;
 }
 
 #search p {
@@ -89,8 +91,8 @@ header .logo {
 #search span {
     color: rgba(178, 222, 255, 1);
     font-size: 3rem;
-    font-family: "Marck Script", "sans-serif";
     text-shadow: white 1px 1px 2px;
+    font-family: "Marck Script", "sans-serif";
 }
 
 header input {
@@ -138,6 +140,7 @@ section form {
         "div6 div6 div6";
     grid-gap: 50px;
     text-align: center;
+    top: 0;
 }
 
 section h3 {
@@ -179,7 +182,7 @@ section input:focus {
 
 /* Pseudo */
 
-input#pseudo {
+input#tel {
     background-image: linear-gradient(
         to bottom,
         rgba(178, 222, 255, 1),
@@ -190,7 +193,7 @@ input#pseudo {
     box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
-input#pseudo:hover {
+input#tel:hover {
     box-shadow: white 1px 1px 20px 1px;
 }
 
@@ -281,7 +284,7 @@ input#envoi:hover {
 }
 
 .div1 {
-    grid-area: div1;
+    grid-area: div3;
 }
 
 .div2 {
@@ -289,7 +292,7 @@ input#envoi:hover {
 }
 
 .div3 {
-    grid-area: div3;
+    grid-area: div1;
 }
 
 .div4 {
@@ -310,6 +313,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .Presentation {
@@ -401,11 +406,10 @@ footer {
     color: white;
     font-size: 1.1em;
     border: none;
-    border-radius: 0 10px 10px 0;
     cursor: pointer;
     font-weight: bold;
-    font-family: "Raleway";
     width: 130px;
+    border-radius: 10px;
 }
 
 .search-btn span {
@@ -487,4 +491,8 @@ form {
 
 nav li:hover a {
     background: rgb(255, 255, 255, 0.5);
+}
+
+footer p {
+    width: 100%;
 }
