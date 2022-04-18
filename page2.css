@@ -14,7 +14,7 @@ img {
 
 header {
     background: url("images/fondpage3.jpg") no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 810px;
     position: relative;
 }
@@ -26,7 +26,7 @@ header {
     color: white;
 }
 
-ul li {
+header ul li {
     color: white;
     list-style: none;
     line-height: 100px;
@@ -50,14 +50,6 @@ nav li:hover {
     transform: scale(1.2) translateY(10px);
 }
 
-header h1 {
-    text-align: center;
-    margin-top: 110px;
-    font-size: 6em;
-    color: white;
-    transition: 10s;
-}
-
 header strong {
     width: 100%;
     line-height: 100px;
@@ -66,8 +58,18 @@ header strong {
     display: none;
 }
 
+header .logo {
+    margin: 150px auto;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -245px;
+    margin-top: -110px;
+}
+
 .logo {
-    width: 200px;
+    width: 300px;
     margin: auto;
 }
 
@@ -80,13 +82,14 @@ header strong {
     font-size: 1.3em;
 }
 
-span {
+#search span {
     color: #8ed1d6;
     font-size: 3rem;
     font-family: "Marck Script", "sans-serif";
+    text-shadow: white 1px 1px 2px;
 }
 
-input {
+header input {
     border: none;
     border-radius: 10px;
     height: 35px;
@@ -128,13 +131,11 @@ input {
     background-size: cover;
     background-position: center;
     height: 300px;
-
 }
 
 .section3act h4 {
     width: 390px;
 }
-
 
 .section3act:hover .sectionflex {
     display: flex;
@@ -143,13 +144,10 @@ input {
     top: 0;
 }
 
-.section3act:hover h4{
-    color:rgb(7,156,174);
-    box-shadow: rgb(7,156,174) -10px 8px 10px;
+.section3act:hover h4 {
+    color: rgb(7, 156, 174);
+    box-shadow: rgb(7, 156, 174) -10px 8px 10px;
 }
-
-
-
 
 /* Randonnée*/
 
@@ -166,14 +164,6 @@ input {
     width: 100%;
     top: 0;
 }
-
-
-
-
-
-
-
-
 
 /*Excursion */
 
@@ -213,7 +203,6 @@ button {
     color: white;
     border: solid 1px white;
     border-radius: 10px;
-    padding: 10px;
     line-height: unset;
     background-color: rgb(45, 66, 87, 0.2);
     line-height: 25px;
@@ -221,7 +210,7 @@ button {
 }
 
 section {
-    margin-top: 50px;
+    margin-top: 2px;
     transition: 1s;
     position: relative;
     transition: 1s;
@@ -229,8 +218,8 @@ section {
 
 section h4 {
     position: absolute;
-    left: 45%;
-    top: 42%;
+    left: 43%;
+    top: 45%;
     font-size: 3em;
     color: white;
     border-left: solid 3px;
@@ -250,8 +239,6 @@ section p {
 
 section:hover {
     height: 800px;
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
 
 section:hover h4 {
@@ -328,15 +315,19 @@ aside {
 }
 
 footer {
-    background-color: silver;
+    background: url(images/footer.jpg) no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .Presentation {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .AssistFollow {
@@ -379,4 +370,136 @@ footer {
 
 .Follow a:hover {
     transform: scale(1.2);
+}
+
+#gps {
+    color: white;
+    height: 40px;
+    width: 40px;
+    background-color: #51b8b5;
+    border-radius: 10px 0 0 10px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: -10px;
+    z-index: 5;
+}
+
+#marseille {
+    width: calc(100% - 175px);
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#search2 {
+    display: flex;
+}
+
+.search-btn {
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #51b8b5;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Raleway";
+    width: 130px;
+}
+
+.search-btn span {
+    padding: 0 20px;
+}
+
+.search-btn i {
+    display: block;
+}
+
+form {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: none;
+}
+
+.search-btn span {
+    display: block;
+}
+
+.search-btn i {
+    display: none;
+}
+
+.search-btn:hover {
+    transform: scale(1.05);
+}
+
+#departuredate {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#nbofadult {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#nbofchild {
+    width: 45px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    bottom: 40px;
+    left: 15px;
+}
+
+.relative {
+    position: relative;
+}
+
+.adult {
+    font-size: 1.5em;
+    left: 12px !important;
+}
+
+nav li:hover a {
+    background: rgb(255, 255, 255, 0.5);
+}
+
+footer p {
+    width: 100%;
 }

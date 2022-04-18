@@ -11,7 +11,29 @@
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
             rel="stylesheet"
         />
-        <script src="https://kit.fontawesome.com/280516d329.js" crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 1000px)"
+            href="media-querries/media-1000max.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 770px)"
+            href="media-querries/media-770max.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 520px)"
+            href="media-querries/media-520max.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/280516d329.js"
+            crossorigin="anonymous"
+        ></script>
 
         <title>Enolo</title>
     </head>
@@ -20,8 +42,7 @@
             <nav class="menu">
                 <ul>
                     <li>
-                        
-                        <a href="index.html">Acceuil</a>
+                        <a href="index.html">Accueil</a>
                     </li>
 
                     <li>
@@ -38,79 +59,133 @@
                 </ul>
             </nav>
 
-            <h1>
-                Welcome to <br />
-                <strong>Enolo</strong>
-            </h1>
             <div class="logo">
-                <img src="images/logoend.png" alt="Logo Enolo" />
+                <img src="images/logoblanc.png" alt="Logo Enolo" />
             </div>
 
             <div id="search">
-                <label for="arrivaldate">Date d'arrivé:</label>
+                <label for="arrivaldate"><span>D</span>ate d'arrivé:</label>
                 <input type="date" name="arrivaldate" />
 
-                <label for="departuredate">Date de départ:</label>
+                <label for="departuredate"><span>D</span>ate de départ:</label>
                 <input type="date" name="arrivaldate" />
 
-                <label for="adultes">Nombre d'adultes:</label>
+                <label for="adultes"><span>N</span>ombre d'adultes:</label>
                 <input type="number" name="adultes" />
 
-                <label for="enfants">Nombre d'enfants:</label>
+                <label for="enfants"><span>N</span>ombre d'enfants:</label>
                 <input type="number" name="enfants" />
 
-                <label for="destination">Destination:</label>
+                <label for="destination"><span>D</span>estination:</label>
                 <input type="search" name="destination" />
             </div>
+
+            <form method="post" action="traitement.php">
+                <div id="search2">
+                    <label for="marseille" id="gps"
+                        ><i class="fas fa-map-marker-alt"></i
+                    ></label>
+                    <input
+                        id="marseille"
+                        type="text"
+                        name="lieu"
+                        size="28"
+                        placeholder="Marseille, France"
+                    />
+                    <input
+                        id="departuredate"
+                        type="date"
+                        name="DateDeDepart"
+                        size="28"
+                    />
+
+                    <div class="relative">
+                        <input
+                            id="nbofadult"
+                            type="number"
+                            name="NombreAdultes"
+                            size="28"
+                            placeholder="0"
+                        />
+                        <i class="fa-solid fa-user absolute adult"></i>
+                    </div>
+
+                    <div class="relative">
+                        <input
+                            id="nbofchild"
+                            type="number"
+                            name="NombreEnfants"
+                            size="28"
+                            placeholder="0"
+                        />
+                        <i class="fa-solid fa-child absolute bas"></i>
+                    </div>
+
+                    <button class="search-btn">
+                        <i class="fa fa-search search-btn-i"></i
+                        ><span>Rechercher</span>
+                    </button>
+                </div>
+            </form>
         </header>
 
         <section class="section1">
-
             <h2>
                 Une Startup en pleine évolution vers la nouvelle technologie.
-                <i class="fas fa-star" aria-hidden="true"></i>
             </h2>
-            <h3>Vous partez en vacanses ? On s'occupe de tout !</h3>
-
-
+            <h3>Vous partez en vacances ? On s'occupe de tout !</h3>
 
             <div class="pic1">
+                <p>
+                    <strong>Mes Vacances à Bora-Bora</strong><br />Lorem ipsum
+                    dolor sit amet. Et dolor magnam sed vero quia qui galisum
+                    officiis id iure nihil a consequuntur autem. Aut aliquam
+                    nihil 33 fugit vero in deserunt labore aut aliquid repellat
+                    et fugiat sint et quasi facilis. Non earum magnam aut quod
+                    reiciendis aut quaerat quas nam aliquid sunt et sequi
+                    quaerat ex libero nesciunt.
+                </p>
 
-                
-                <p><span class="firstletter">Mes Vacance à Bora-Bora<br></span>Lorem ipsum dolor sit amet. Et dolor magnam sed vero quia qui galisum officiis id iure nihil a consequuntur autem. Aut aliquam nihil 33 fugit vero in deserunt labore aut aliquid repellat et fugiat sint et quasi facilis. Non earum magnam aut quod reiciendis aut quaerat quas nam aliquid sunt et sequi quaerat ex libero nesciunt.</p>
-                
                 <img
                     src="images/dora_bora.jpg"
-                    alt="Un bungalow sur pilloti à bora bora"/>
-            </div>
-
-
-            <div class="pic1">
-            
-                    
-                    <p><span>Mes Vacances à Maldive<br></span>Lorem ipsum dolor sit amet. Et dolor magnam sed vero quia qui galisum officiis id iure nihil a consequuntur autem. Aut aliquam nihil 33 fugit vero in deserunt labore aut aliquid repellat et fugiat sint et quasi facilis. Non earum magnam aut quod reiciendis aut quaerat quas nam aliquid sunt et sequi quaerat ex libero nesciunt.</p>
-                
-                
-                    <img
-                        src="images/thailande.jpg"
-                        alt="Un bungalow sur pilloti à bora bora"/>
-                
+                    alt="Un bungalow sur pilloti à bora bora"
+                />
             </div>
 
             <div class="pic1">
+                <p>
+                    <strong>Mes Vacances à Maldive</strong><br />Lorem ipsum
+                    dolor sit amet. Et dolor magnam sed vero quia qui galisum
+                    officiis id iure nihil a consequuntur autem. Aut aliquam
+                    nihil 33 fugit vero in deserunt labore aut aliquid repellat
+                    et fugiat sint et quasi facilis. Non earum magnam aut quod
+                    reiciendis aut quaerat quas nam aliquid sunt et sequi
+                    quaerat ex libero nesciunt.
+                </p>
 
-                    
-                    <p><span>Mes Vacances à Tahïti<br></span>Lorem ipsum dolor sit amet. Et dolor magnam sed vero quia qui galisum officiis id iure nihil a consequuntur autem. Aut aliquam nihil 33 fugit vero in deserunt labore aut aliquid repellat et fugiat sint et quasi facilis. Non earum magnam aut quod reiciendis aut quaerat quas nam aliquid sunt et sequi quaerat ex libero nesciunt.</p>
-                
+                <img
+                    src="images/thailande.jpg"
+                    alt="Un bungalow sur pilloti à bora bora"
+                />
+            </div>
+
+            <div class="pic1">
+                <p>
+                    <strong>Mes Vacances à Tahïti</strong><br />Lorem ipsum
+                    dolor sit amet. Et dolor magnam sed vero quia qui galisum
+                    officiis id iure nihil a consequuntur autem. Aut aliquam
+                    nihil 33 fugit vero in deserunt labore aut aliquid repellat
+                    et fugiat sint et quasi facilis. Non earum magnam aut quod
+                    reiciendis aut quaerat quas nam aliquid sunt et sequi
+                    quaerat ex libero nesciunt.
+                </p>
+
                 <img
                     src="images/plagebleu.jpg"
-                    alt="Un bungalow sur pilloti à bora bora"/>
+                    alt="Un bungalow sur pilloti à bora bora"
+                />
             </div>
-
         </section>
-
-
-
 
         <section class="section2">
             <article></article>
@@ -121,7 +196,7 @@
         <footer id="foot">
             <div class="Presentation">
                 <div class="logo">
-                    <img src="images/logoend.png" alt="Logo Enolo" />
+                    <img src="images/logoblanc.png" alt="Logo Enolo" />
                 </div>
                 <h3>Vos vacances simplifiées</h3>
             </div>
@@ -156,6 +231,7 @@
                     </a>
                 </div>
             </div>
+            <p>Tous droits réservés @Enolo - 2022</p>
         </footer>
     </body>
 </html>
