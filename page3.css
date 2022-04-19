@@ -18,8 +18,11 @@ header {
     position: relative;
 }
 
-header, footer{
-    font-family: "Josefin Sans", sans-serif;
+header,
+footer,
+#search2 input,
+#search2 button {
+    font-family: "Josefin Sans", sans-serif !important;
 }
 
 #search p {
@@ -85,11 +88,11 @@ header .logo {
     font-size: 1.3em;
 }
 
-span {
+#search span {
     color: rgba(178, 222, 255, 1);
     font-size: 3rem;
-    font-family: "Marck Script", "sans-serif";
     text-shadow: white 1px 1px 2px;
+    font-family: "Marck Script", "sans-serif";
 }
 
 header input {
@@ -102,10 +105,10 @@ header input {
     box-shadow: antiquewhite 1px 1px 9px 1px;
 }
 
-section{
-    padding:40px;
+section {
+    padding: 40px;
     font-family: "Marck Script", "sans-serif";
-    position:relative;
+    position: relative;
 }
 
 section::before {
@@ -116,15 +119,15 @@ section::before {
     bottom: 0;
     left: 2.5%;
     margin-bottom: 10px;
-    background-color:rgba(178, 222, 255, 1);
+    background-color: rgba(178, 222, 255, 1);
 }
 
-section form{
+section form {
     position: relative;
     background: url(images/fondform.png);
     background-size: cover;
     border-radius: 50px;
-    padding:56px;
+    padding: 56px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -137,166 +140,171 @@ section form{
         "div6 div6 div6";
     grid-gap: 50px;
     text-align: center;
-    
+    top: 0;
 }
-    
 
-
-section h3{
+section h3 {
     text-align: center;
     font-size: 2em;
     color: white;
     box-shadow: 1px 1px 10px;
-    grid-area:h3;
-    margin-bottom:75px;
-    letter-spacing:1px;
-    text-shadow:rgba(178, 222, 255, 1) 10px 1px 13px;
+    grid-area: h3;
+    margin-bottom: 75px;
+    letter-spacing: 1px;
+    text-shadow: rgba(178, 222, 255, 1) 10px 1px 13px;
 }
 
-
-
-.champ{
+.champ {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
-
-
-section label{
-    font-size:1.7em;
-    color:white;
-    width:190px;
-    text-shadow:#074362 1px 1px 1px;
-
+section label {
+    font-size: 1.7em;
+    color: white;
+    width: 190px;
+    text-shadow: #074362 1px 1px 1px;
 }
 
-
-section input{
+section input {
     border-radius: 6px;
-    font-size:1.5em;
-    padding:9px;
-    color:black;
+    font-size: 1.5em;
+    padding: 9px;
+    color: black;
     -webkit-appearance: none;
 }
 
-section input:focus{
-    outline:none;
+section input:focus {
+    outline: none;
 }
 
+/* Pseudo */
 
-        /* Pseudo */
-
-input#pseudo{
-    background-image: linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));
+input#tel {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(178, 222, 255, 1),
+        rgba(33, 163, 223, 0.527)
+    );
     border: none;
     width: 385px;
     box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
-
-input#pseudo:hover{
+input#tel:hover {
     box-shadow: white 1px 1px 20px 1px;
 }
 
-        /*Pass*/
+/*Pass*/
 
-input#pass{
-    background-image: linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));
-    border:white;
+input#pass {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(178, 222, 255, 1),
+        rgba(33, 163, 223, 0.527)
+    );
+    border: white;
     width: 385px;
     box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
-input#pass:hover{
+input#pass:hover {
     box-shadow: white 1px 1px 20px 1px;
 }
 
+/* mail */
 
-        /* mail */
-
-input#mail{
-    background-image: linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));
-    border:none;
+input#mail {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(178, 222, 255, 1),
+        rgba(33, 163, 223, 0.527)
+    );
+    border: none;
     width: 385px;
     box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
-input#mail:hover{
+input#mail:hover {
     box-shadow: white 1px 1px 20px 1px;
 }
 
-        /* destination */
+/* destination */
 
-input#dest{
-    background-image:linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));;
-    border:none;
+input#dest {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(178, 222, 255, 1),
+        rgba(33, 163, 223, 0.527)
+    );
+    border: none;
     width: 385px;
     box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
-input#dest:hover{
+input#dest:hover {
     box-shadow: white 1px 1px 20px 1px;
 }
 
-        /* message */
+/* message */
 
-input#message{
-    background-image: linear-gradient(to bottom, rgba(178, 222, 255, 1), rgba(33, 163, 223, 0.527));
-    border:none;
+input#message {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(178, 222, 255, 1),
+        rgba(33, 163, 223, 0.527)
+    );
+    border: none;
     width: 385px;
     height: 119px;
-    box-shadow:#76b1d6 1px 2px 20px 1px;
+    box-shadow: #76b1d6 1px 2px 20px 1px;
 }
 
-input#message:hover{
+input#message:hover {
     box-shadow: white 1px 1px 20px 1px;
 }
 
-        /*Bouton Envoyé*/
+/*Bouton Envoyé*/
 
-input#envoi{
+input#envoi {
     box-shadow: white 1px 5px 27px 1px;
     border: none;
     font-family: "Marck Script", "sans-serif";
-    color:rgba(87, 182, 250, 0.993);
-    text-shadow:  1px 1px
-
+    color: rgba(87, 182, 250, 0.993);
+    text-shadow: 1px 1px;
 }
- 
 
-input#envoi:hover{
-    color:antiquewhite;
+input#envoi:hover {
+    color: antiquewhite;
     background-color: rgb(116, 184, 236);
     transition-property: background-color;
     transition-duration: 0.6s;
 }
 
-
-
-.div1{
-    grid-area:div1;
+.div1 {
+    grid-area: div3;
 }
 
-.div2{
-    grid-area:div2;
+.div2 {
+    grid-area: div2;
 }
 
-.div3{
-    grid-area:div3;
+.div3 {
+    grid-area: div1;
 }
 
-.div4{
-    grid-area:div4;
+.div4 {
+    grid-area: div4;
 }
 
-.div5{
-    grid-area:div5;
+.div5 {
+    grid-area: div5;
 }
 
-.div6{
-    grid-area:div6;
+.div6 {
+    grid-area: div6;
 }
 
 footer {
@@ -305,6 +313,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .Presentation {
@@ -396,41 +406,38 @@ footer {
     color: white;
     font-size: 1.1em;
     border: none;
-    border-radius: 0 10px 10px 0;
     cursor: pointer;
     font-weight: bold;
-    font-family: "Raleway";
     width: 130px;
+    border-radius: 10px;
 }
 
 .search-btn span {
     padding: 0 20px;
 }
 
-
 .search-btn i {
     display: block;
 }
 
-form{
+form {
     position: absolute;
     bottom: 10px;
     width: 100%;
     display: none;
 }
 
-.search-btn span{
+.search-btn span {
     display: block;
 }
 
-.search-btn i{
+.search-btn i {
     display: none;
 }
 
-.search-btn:hover{
+.search-btn:hover {
     transform: scale(1.05);
 }
-
 
 #departuredate {
     width: 45px;
@@ -465,7 +472,7 @@ form{
     border-bottom: 1px solid #f2f2f2;
 }
 
-.absolute{
+.absolute {
     position: absolute;
     z-index: 10;
     color: white;
@@ -473,19 +480,19 @@ form{
     left: 15px;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.adult{
+.adult {
     font-size: 1.5em;
     left: 12px !important;
 }
 
 nav li:hover a {
-    background: rgb(255,255,255,0.5);
+    background: rgb(255, 255, 255, 0.5);
 }
 
-
-
-
+footer p {
+    width: 100%;
+}

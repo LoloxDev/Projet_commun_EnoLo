@@ -26,7 +26,7 @@ header {
     color: white;
 }
 
-ul li {
+header ul li {
     color: white;
     list-style: none;
     line-height: 100px;
@@ -131,13 +131,11 @@ header input {
     background-size: cover;
     background-position: center;
     height: 300px;
-
 }
 
 .section3act h4 {
     width: 390px;
 }
-
 
 .section3act:hover .sectionflex {
     display: flex;
@@ -146,13 +144,10 @@ header input {
     top: 0;
 }
 
-.section3act:hover h4{
-    color:rgb(7,156,174);
-    box-shadow: rgb(7,156,174) -10px 8px 10px;
+.section3act:hover h4 {
+    color: rgb(7, 156, 174);
+    box-shadow: rgb(7, 156, 174) -10px 8px 10px;
 }
-
-
-
 
 /* Randonnée*/
 
@@ -169,14 +164,6 @@ header input {
     width: 100%;
     top: 0;
 }
-
-
-
-
-
-
-
-
 
 /*Excursion */
 
@@ -231,8 +218,8 @@ section {
 
 section h4 {
     position: absolute;
-    left: 45%;
-    top: 42%;
+    left: 43%;
+    top: 45%;
     font-size: 3em;
     color: white;
     border-left: solid 3px;
@@ -333,6 +320,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .Presentation {
@@ -424,7 +413,6 @@ footer {
     color: white;
     font-size: 1.1em;
     border: none;
-    border-radius: 0 10px 10px 0;
     cursor: pointer;
     font-weight: bold;
     font-family: "Raleway";
@@ -435,30 +423,28 @@ footer {
     padding: 0 20px;
 }
 
-
 .search-btn i {
     display: block;
 }
 
-form{
+form {
     position: absolute;
     bottom: 10px;
     width: 100%;
     display: none;
 }
 
-.search-btn span{
+.search-btn span {
     display: block;
 }
 
-.search-btn i{
+.search-btn i {
     display: none;
 }
 
-.search-btn:hover{
+.search-btn:hover {
     transform: scale(1.05);
 }
-
 
 #departuredate {
     width: 45px;
@@ -493,7 +479,7 @@ form{
     border-bottom: 1px solid #f2f2f2;
 }
 
-.absolute{
+.absolute {
     position: absolute;
     z-index: 10;
     color: white;
@@ -501,15 +487,19 @@ form{
     left: 15px;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.adult{
+.adult {
     font-size: 1.5em;
     left: 12px !important;
 }
 
 nav li:hover a {
-    background: rgb(255,255,255,0.5);
+    background: rgb(255, 255, 255, 0.5);
+}
+
+footer p {
+    width: 100%;
 }

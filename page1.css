@@ -51,7 +51,6 @@ nav li:hover {
     transform: scale(1.2) translateY(10px);
 }
 
-
 header strong {
     width: 100%;
     line-height: 100px;
@@ -81,17 +80,17 @@ header .logo {
     bottom: 75px;
     color: white;
     width: 100%;
-    font-size:1.3rem
+    font-size: 1.3rem;
 }
 
-span {
-    color:#EDD5AF;
+#search span {
+    color: #edd5af;
     font-size: 3rem;
     font-family: "Marck Script", "sans-serif";
     text-shadow: white 1px 1px 2px;
 }
 
-.fig h6::first-letter{
+.fig h6::first-letter {
     color: #efe78a;
     letter-spacing: 2px;
     font-size: 3rem;
@@ -99,11 +98,11 @@ span {
     text-shadow: black 1px 1px 2px;
 }
 
-.fig h6{
+.fig h6 {
     font-size: 1em;
 }
 
-figcaption > div{
+figcaption > div {
     margin-bottom: 10px;
 }
 
@@ -113,11 +112,11 @@ input {
     height: 25px;
     -webkit-appearance: none;
     background-color: white;
-    opacity:0.5;
+    opacity: 0.5;
     box-shadow: antiquewhite;
 }
 
-.hostels{
+.hostels {
     display: grid;
     grid-template-columns: 1fr auto 1fr auto 1fr;
     grid-template-rows: auto 1fr auto 1fr;
@@ -132,23 +131,22 @@ input {
     position: relative;
 }
 
-.card{
-    width:100%;
+.card {
+    width: 100%;
     display: flex;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: rgb(216,216,216, 0.3) 0 0 100px 10px;
+    box-shadow: rgb(216, 216, 216, 0.3) 0 0 100px 10px;
     flex-wrap: wrap;
     align-items: stretch;
     cursor: pointer;
-
 }
 
-.card img{
+.card img {
     height: 85%;
 }
 
-.card figcaption{
+.card figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,17 +158,17 @@ input {
     height: 15%;
 }
 
-.card figcaption::after{
+.card figcaption::after {
     content: "";
     height: 2px;
     width: 30px;
     position: absolute;
-    bottom:50%;
+    bottom: 50%;
     left: 5%;
     background-color: black;
 }
 
-.card figcaption::before{
+.card figcaption::before {
     content: "";
     height: 2px;
     width: 30px;
@@ -180,48 +178,52 @@ input {
     background-color: black;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
 }
 
-.hostels h5{
+.hostels h5 {
     grid-area: title;
     font-size: 1.5em;
 }
 
-.card:first-of-type{
+.card:first-of-type {
     grid-area: img1;
 }
 
-.card:nth-of-type(1){
-    grid-area: img2;  
+.card:nth-of-type(2) {
+    grid-area: img2;
 }
 
-.card:nth-of-type(2){
+.card:nth-of-type(3) {
     grid-area: img3;
 }
 
-.card:nth-of-type(3){
+.card:nth-of-type(4) {
     grid-area: img4;
 }
 
-.card:nth-of-type(4){
+.card:nth-of-type(5) {
     grid-area: img5;
 }
 
-.card:last-of-type{
+.card:last-of-type {
     grid-area: img6;
 }
 
-
-.greystar{
-    display: inline;
-    color:silver;
+.fig {
+    width: 100%;
+    height: 100%;
 }
 
-.goldstar{
+.greystar {
     display: inline;
-    color:#efe78a;
+    color: silver;
+}
+
+.goldstar {
+    display: inline;
+    color: #efe78a;
 }
 
 footer {
@@ -230,6 +232,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .Presentation {
@@ -254,8 +258,8 @@ footer {
     justify-content: space-evenly;
 }
 
-.Follow a{
-    width:50px;
+.Follow a {
+    width: 50px;
     height: 50px;
     margin-left: 5px;
 }
@@ -266,17 +270,17 @@ footer {
     margin: 20px 0;
 }
 
-#foot div{
-    padding:20px;
+#foot div {
+    padding: 20px;
 }
 
-.Assist a{
+.Assist a {
     color: black;
     text-decoration: none;
     margin-bottom: 7px;
 }
 
-.Follow a:hover{
+.Follow a:hover {
     transform: scale(1.2);
 }
 
@@ -284,7 +288,7 @@ footer {
     color: white;
     height: 40px;
     width: 40px;
-    background-color: #EDD5AF;
+    background-color: #edd5af;
     border-radius: 10px 0 0 10px;
     line-height: 40px;
     text-align: center;
@@ -317,7 +321,7 @@ footer {
     line-height: 40px;
     height: 40px;
     text-align: center;
-    background-color: #EDD5AF;
+    background-color: #edd5af;
     color: white;
     font-size: 1.1em;
     border: none;
@@ -331,36 +335,33 @@ footer {
     padding: 0 20px;
 }
 
-
 .search-btn i {
     display: block;
 }
-
 
 .search-btn {
     width: 130px;
     border-radius: 10px;
 }
 
-form{
+form {
     position: absolute;
     bottom: 10px;
     width: 100%;
     display: none;
 }
 
-.search-btn span{
+.search-btn span {
     display: block;
 }
 
-.search-btn i{
+.search-btn i {
     display: none;
 }
 
-.search-btn:hover{
+.search-btn:hover {
     transform: scale(1.05);
 }
-
 
 #departuredate {
     width: 45px;
@@ -395,7 +396,7 @@ form{
     border-bottom: 1px solid #f2f2f2;
 }
 
-.absolute{
+.absolute {
     position: absolute;
     z-index: 10;
     color: white;
@@ -403,11 +404,11 @@ form{
     left: 15px;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.adult{
+.adult {
     font-size: 1.5em;
     left: 12px !important;
 }
@@ -447,35 +448,43 @@ section::before {
 }
 
 nav li:hover a {
-    background: rgb(255,255,255,0.5);
+    background: rgb(255, 255, 255, 0.5);
 }
 
-.separation:first-of-type{
+.separation:first-of-type {
     background-color: black;
-    width: 5px;
+    width: 2px;
     grid-area: sep1;
 }
 
-.separation:nth-of-type(2){
+.separation:nth-of-type(2) {
     grid-area: sep3;
     background-color: black;
     height: 5px;
-    
 }
-.separation:nth-of-type(3){
-grid-area: sep4;
-background-color: black;
-height: 5px;
+.separation:nth-of-type(3) {
+    grid-area: sep4;
+    background-color: black;
+    height: 5px;
 }
 
-.separation:nth-of-type(4){
+.separation:nth-of-type(4) {
     grid-area: sep5;
     background-color: black;
     height: 5px;
-    }
+}
 
-.separation:last-of-type{
+.separation:last-of-type {
     background-color: black;
     grid-area: sep2;
-    width: 5px;
+    width: 2px;
+}
+
+.card2:hover ~ .card2 > h6 {
+    text-shadow: 2px 2px gold;
+    color: red;
+}
+
+footer p {
+    width: 100%;
 }
