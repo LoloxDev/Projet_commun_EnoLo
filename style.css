@@ -121,7 +121,7 @@ input {
     box-shadow: white -100px 1px 30px 10px;
 }
 
-p::first-letter {
+.section1 p::first-letter {
     color: rgb(147, 201, 197);
     font-size: 2em;
     font-family: "Marck Script", "sans-serif";
@@ -408,4 +408,11 @@ form {
 
 footer p {
     width: 100%;
+}
+
+.poli{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
 }
