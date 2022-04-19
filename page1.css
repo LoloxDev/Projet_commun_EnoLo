@@ -488,3 +488,10 @@ nav li:hover a {
 footer p {
     width: 100%;
 }
+
+.poli{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+}
