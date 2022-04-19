@@ -135,6 +135,12 @@ header input {
 
 .section3act h4 {
     width: 390px;
+    text-shadow: black 1px 1px 2px;
+}
+
+.height h4::first-letter{
+    font-size: 2em;
+    text-shadow: black 1px 1px 5px;
 }
 
 .section3act:hover .sectionflex {
@@ -220,13 +226,14 @@ section h4 {
     position: absolute;
     left: 43%;
     top: 45%;
-    font-size: 3em;
+    font-size: 2.5em;
     color: white;
     border-left: solid 3px;
     border-bottom: solid 3px;
     width: 200px;
     z-index: 5;
     transition: 1s;
+    padding: 10px;
 }
 
 section p {
@@ -246,6 +253,8 @@ section:hover h4 {
     top: 50px;
     box-shadow: white -10px 10px 10px;
     left: unset;
+    border-radius: 15px;
+    
 }
 
 aside {
@@ -344,6 +353,14 @@ footer {
     flex-wrap: wrap;
     margin-left: 50px;
     justify-content: space-evenly;
+}
+
+.Newsletter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .Follow a {
@@ -508,5 +525,43 @@ footer p {
     width: 100%;
     color: black;
     text-decoration: none;
-    margin: 20px;
+    margin: 20px 0;
+}
+
+.mail{
+    width: calc(100% - 175px);
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-radius: 10px;
+    margin-right: -20px;
+    margin-left: 20px;
+    max-width: 200px;
+}
+
+footer .search-btn i{
+    display: inline !important;
+    width: 45px !important;
+}
+
+footer .search-btn{
+    width: 45px;
+    border-radius: 0 10px 10px 0;
+    background-color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+input:focus{
+    outline:  none;
 }
